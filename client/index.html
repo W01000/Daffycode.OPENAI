@@ -5,16 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daffycode - your coding AI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app">
+      <button id="toggle_btn">Light Mode</button>
       <div id="chat_container"></div>
       <form>
-        <textarea name="prompt" rows="1" cols="1" placeholder="Ask Daffycode..."></textarea>
+        <textarea
+          name="prompt"
+          rows="1"
+          cols="1"
+          placeholder="Ask Daffycode..."
+        ></textarea>
         <button type="submit"><img src="assets/send.svg" /></button>
       </form>
-      <button id="toggle_btn">Toggle Light Mode</button>
     </div>
     <script type="module" src="script.js"></script>
   </body>
