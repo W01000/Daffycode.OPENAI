@@ -1,10 +1,10 @@
-
-
 import bot from './assets/bot.svg';
 import user from './assets/user.svg';
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
+const body = document.querySelector('body');
+const toggleBtn = document.querySelector('#toggle_btn');
 
 let loadInterval;
 
@@ -65,7 +65,7 @@ const handleSubmit = async (e) => {
   form.reset();
 
   const uniqueId = generateUniqueID();
-  chatContainer.innerHTML += chatStripe(true, "", uniqueId);
+  chatContainer.innerHTML += chatStripe(true, '', uniqueId);
 
   chatContainer.scrollTop = chatContainer.scrollHeight;
 
@@ -97,11 +97,17 @@ const handleSubmit = async (e) => {
 
     alert(err);
   }
-}
+};
 
 form.addEventListener('submit', handleSubmit);
 form.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
     handleSubmit(e);
   }
-})
+});
+
+function toggleLightMode() {
+  body.classList.toggle('light-mode');
+}
+
+toggleBtn.addEventListener('click', toggleLightMode);
