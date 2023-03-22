@@ -75,8 +75,11 @@ body {
   align-items: center;
 }
 
-.ai .profile {
-  background: #5d5d5d;
+.ai {
+  background: #5f7a6a;
+}
+.profile {
+  background: #b4cf6bc7;
 }
 
 .profile img {
