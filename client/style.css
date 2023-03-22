@@ -8,13 +8,13 @@
 }
 
 body {
-  background: #8c1e9b94;
+  background: #F0F6FC;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #8c1e9b94;
+  background: #F0F6FC;
 
   display: flex;
   flex-direction: column;
@@ -39,7 +39,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
 #chat_container::-webkit-scrollbar {
   display: none;
 }
@@ -50,7 +49,7 @@ body {
 }
 
 .ai {
-  background: #ed8dfa4b;
+  background: #EFF3F6;
 }
 
 .chat {
@@ -69,15 +68,11 @@ body {
   height: 36px;
   border-radius: 5px;
 
-  background: #6f379d;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #1F2937;
 }
 
 .ai .profile {
-  background: #f69124;
+  background: #3B82F6;
 }
 
 .profile img {
@@ -89,13 +84,13 @@ body {
 .message {
   flex: 1;
 
-  color: #000000;
+  color: #1F2937;
   font-size: 20px;
 
   max-width: 100%;
   overflow-x: scroll;
 
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -110,7 +105,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #6f379d;
+  background: #1F2937;
 
   display: flex;
   flex-direction: row;
@@ -120,7 +115,7 @@ form {
 textarea {
   width: 100%;
 
-  color: #ffffff;
+  color: #F0F6FC;
   font-size: 18px;
 
   padding: 10px;
